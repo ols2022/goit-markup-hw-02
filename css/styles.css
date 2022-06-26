@@ -1,0 +1,120 @@
+/* main background color = #E5E5E5  */
+
+/* Hero background color = #2F303A */
+/* Hero text color = #FFFFFF */
+                                                      /* Benefits and works color = #E5E5E5 */
+/* Team color = #F5F4FA */
+/* header color =  #FFFFFF*/
+/* footer color = #2F303A */
+
+/* <h1,h2.h3> and button text color - main text color = #212121 */
+/* <p> text color and mailto: with tel: = #757575 */
+
+                                                        /* button text color = #212121 */
+/* button text accent = #FFFFFF  */
+/* button bg color = #F5F4FA */
+
+/* main accent color = #2196F3 */
+
+/* logo Studio accent = #000000 */
+
+:root   {
+    --main-bg-color: #E5E5E5;
+    --header-bg-color: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    --hero-bg-color: #2F303A;
+    --hero-text-color: #FFFFFF;
+    --main-accent-color: #2196F3;
+    --logo-studio-color: #000000;
+    --main-text-color: #212121;
+    --p-text-color: #757575;
+    --button-text: #212121;
+    --button-bg-color: #F5F4FA;
+    --button-accent-text-color: #FFFFFF;
+    
+}
+
+/* main page */
+.page-body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+/* Universal stile reset */
+
+/* .list {
+    list-style: none;
+} */
+
+ul {
+    list-style: none;
+}
+
+/* logo */
+.logo-accent-left {
+    color: var(--main-accent-color);
+}
+
+.logo-accent-right {
+    color: var(--logo-studio-color);
+}
+
+/* mailto */
+.mailto {
+    color: var(--p-text-color);
+}
+
+.mailto .link:focus,
+.mailto .link:hover {
+    color: var(--main-accent-color);
+}
+
+/* header */
+.header {
+    background-color: var(--header-bg-color);
+}
+
+.site-nav .link {
+    color: var(--main-text-color) ;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--main-accent-color);
+}
+/* main */
+
+.main {
+background-color: var(--main-bg-color);
+}
+
+/* main - Hero */
+.hero {
+    background-color: var(--hero-bg-color);
+}
+
+.hero > h1 {
+    color: var(--hero-text-color) ;
+}
+
+.hero > button {
+    background-color: var(--main-accent-color);
+    color: var(--button-accent-text-color);
+}
+
+.hero .button:focus,
+.hero .button:hover {
+    background-color: var(--button-accent-text-color);
+    color: var(--main-accent-color);
+} /* не уверен в корректности применения */
+
+
+/* main sections - common class for sections */
+.section-text {
+    color: var(--p-text-color);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
