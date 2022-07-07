@@ -2,25 +2,24 @@
 
 /* Hero background color = #2F303A */
 /* Hero text color = #FFFFFF */
-                                                      /* Benefits and works color = #E5E5E5 */
+
 /* Team section bg color =  */
+
 /* header color =  #FFFFFF*/
 /* footer color = #2F303A */
 
 /* <h1,h2.h3> and button text color - main text color = #212121 */
 /* <p> text color and mailto: with tel: = #757575 */
 
-                                                        /* button text color = #212121 */
 /* button text accent = #FFFFFF  */
 /* button bg color = #F5F4FA */
+/* button here bg color:hover = #188CE8 */
 
 /* main accent color = #2196F3 */
-
 /* logo Studio accent = #000000 */
 
 :root   {
     --main-bg-color: #FFFFFF;
-    /* --header-bg-color: #FFFFFF; */
     --footer-bg-color: #2F303A;
     --hero-bg-color: #2F303A;
     --hero-text-color: #FFFFFF;
@@ -30,36 +29,39 @@
     --p-text-color: #757575;
     --button-text: #212121;
     --button-bg-color: #F5F4FA;
+    --button-hero-bg-color_hover: #188CE8;
     --button-accent-text-color: #FFFFFF;
     --team-section-bg-color: #F5F4FA;
     
 }
 
-.page-body {
+/* Common components */
+
+.site-body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-/* Universal stile reset */
+/* Universal style reset */
 
-/* .list {
-    list-style: none;
-} */
-
-ul {
+.list {
     list-style: none;
 }
 
-/* header */
+.link {
+    text-decoration: none;
+}
 
+/* header */
 /* logo */
 .logo-header {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     text-decoration: none;
     }
@@ -138,18 +140,22 @@ background-color: var(--main-bg-color);
     text-transform: uppercase;
 }
 
-.hero > button {
+.hero .button {
     background-color: var(--main-accent-color);
     color: var(--button-accent-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
     font-family: inherit;
     border-color: transparent;
 }
 
-/* .hero .button:focus,
+.hero .button:focus,
 .hero .button:hover {
-    background-color: var(--button-accent-text-color);
-    color: var(--main-accent-color); */
-} /* не уверен в корректности применения */
+    background-color: var(--button-hero-bg-color_hover);
+} 
 
 
 /* main sections - common class for sections */
@@ -218,11 +224,11 @@ background-color: var(--main-bg-color);
     color: var(--button-accent-text-color);
 }
 
-.works .card {
+.projects-list .card {
     text-decoration: none;
 }
 
-.works .title {
+.projects-list .title {
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -232,7 +238,7 @@ background-color: var(--main-bg-color);
     
 }
 
-.works .section-text {
+.projects-list .section-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -264,7 +270,7 @@ background-color: var(--main-bg-color);
 }
 .footer .address {
     color: var(--button-accent-text-color);
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
